@@ -5,16 +5,16 @@ namespace Tyuiu.MitrofanovaPV.Sprint3.Task4.V10.Lib
     {
         public double Calculate(int startValue, int stopValue)
         {
-            double res = 0;
+            double res = 1;
             for (int x = startValue; x <= stopValue; x++)
             {
                 if (x == 0)
                 {
-                    break;
+                    continue;
                 }
                 else
                 {
-                    res = res * ((Math.Sin(x) - x) / x);
+                    res = res * (((Math.Sin(x)) - x) / x);
                 }
             }
             return Math.Round(res, 3);
