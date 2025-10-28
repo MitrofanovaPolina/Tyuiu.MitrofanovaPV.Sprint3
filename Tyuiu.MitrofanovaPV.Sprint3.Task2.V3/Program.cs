@@ -5,9 +5,9 @@ class Program
     {
         DataService ds = new DataService();
         int value = 4;
-        int startValue = 1 ;
-        int stopValue =15 ;
-        Console.WriteLine("Сумма ряда =" + Math.Round(ds.GetSumSeries(value, startValue, stopValue), 3));
+        int startValue = 1;
+        int stopValue =15;
+        Console.WriteLine("Сумма ряда =" + ds.GetSumSeries(value, startValue, stopValue));
         Console.ReadKey();
     }
 }

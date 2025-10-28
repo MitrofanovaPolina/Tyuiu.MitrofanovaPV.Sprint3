@@ -1,22 +1,17 @@
 ﻿using tyuiu.cources.programming.interfaces.Sprint3;
-namespace Tyuiu.MitrofanovaPV.Sprint3.Task2.V3.Lib
+namespace Tyuiu.MitrofanovaPV.Sprint3.Task2.V3.Lib;
+
+public class DataService : ISprint3Task2V3
 {
-    public class DataService : ISprint3Task2V3
+    public double GetSumSeries(int value, int startValue, int stopValue)
     {
-        public double GetSumSeries(int value, int startValue, int stopValue)
+        double SumSeries = 0;
+        do
         {
-            double sumSeries = 0;
-            do
-            {
-                sumSeries = sumSeries + ((value * value * startValue)+1);
-                startValue++;
+            SumSeries = SumSeries + ((value * value * startValue)+1);
+            startValue++;
 
-            } while (startValue < stopValue);
-
-                    return Math.Round(sumSeries, 3);
-
-
-
-        }
+        }while (startValue <= stopValue);
+        return Math.Round(SumSeries, 3);
     }
 }
