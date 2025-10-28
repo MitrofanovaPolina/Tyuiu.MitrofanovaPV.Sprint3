@@ -14,7 +14,7 @@ namespace Tyuiu.MitrofanovaPV.Sprint3.Task4.V10.Lib
                 }
                 else
                 {
-                    res = res + ((Math.Sin(x) - x) / x);
+                    res = res * ((Math.Sin(x) - x) / x);
                 }
             }
             return Math.Round(res, 3);
