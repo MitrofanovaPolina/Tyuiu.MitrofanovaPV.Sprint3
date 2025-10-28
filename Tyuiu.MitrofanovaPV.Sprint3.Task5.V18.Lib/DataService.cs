@@ -11,7 +11,7 @@ namespace Tyuiu.MitrofanovaPV.Sprint3.Task5.V18.Lib
             {
                 for (j = startValue2; j <= stopValue2; j++)
                 {
-                    sumSeries = sumSeries + (Math.Cos(x) + (Math.Pow(startValue2,2)/2));
+                    sumSeries = sumSeries + (Math.Cos(x) + ((Math.Pow(j,2))/2));
                 }
             }
             return Math.Round(sumSeries,3);
