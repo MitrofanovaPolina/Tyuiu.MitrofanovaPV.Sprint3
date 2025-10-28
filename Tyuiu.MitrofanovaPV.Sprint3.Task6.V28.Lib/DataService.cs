@@ -13,7 +13,7 @@ namespace Tyuiu.MitrofanovaPV.Sprint3.Task6.V28.Lib
                 {
                     if (x%d == 0)
                     {
-                        if (d>7)
+                        if (d<7)
                         {
                             sum++;
                         }
